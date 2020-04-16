@@ -18,7 +18,7 @@ public class Publisher {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
-	private String mane;
+	private String name;
 	private String addressLine1;
 	private String city;
 	private String state;
@@ -33,7 +33,7 @@ public class Publisher {
 	}
 	public Publisher(String mane, String addressLine1, String city, String state, String zip) {
 		super();
-		this.mane = mane;
+		this.name = mane;
 		this.addressLine1 = addressLine1;
 		this.city = city;
 		this.state = state;
@@ -45,11 +45,11 @@ public class Publisher {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public String getMane() {
-		return mane;
+	public String getName() {
+		return name;
 	}
-	public void setMane(String mane) {
-		this.mane = mane;
+	public void setName(String mane) {
+		this.name = mane;
 	}
 	public String getAddressLine1() {
 		return addressLine1;
